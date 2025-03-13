@@ -1,7 +1,7 @@
 
 const Projects = () => {
     return (
-        <div>
+        <>
             <h1>Projects</h1>
             <div className="projects">
                 <div className="project">
@@ -13,8 +13,8 @@ const Projects = () => {
                     <p>Project 2 description</p>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
-export default Projects
+export default Projects;

@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
-  color: rgba(255, 255, 255, 0.87);
+  font-family: monospace;
+  color: rgba(255, 255, 255);
   background-color: #0b1337;
 
 }
