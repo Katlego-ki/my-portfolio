@@ -1,20 +1,10 @@
-
 const Projects = () => {
     return (
-        <div>
-            <h1>Projects</h1>
-            <div className="projects">
-                <div className="project">
-                    <h2>Project 1</h2>
-                    <p>Project 1 description</p>
-                </div>
-                <div className="project">
-                    <h2>Project 2</h2>
-                    <p>Project 2 description</p>
-                </div>
-            </div>
+        <div className="flex-column justify-center bg opacity-50 h-2/3 w-3/4 mx-auto bg-black mt-10 rounded-lg">
+            <h1 className="border-solid border-2 border-gray-400 text-center rounded-md mx-auto text-4xl font-mono">Projects:</h1>
+            
         </div>
     )
-}
+};
 
-export default Projects
+export default Projects;

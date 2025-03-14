@@ -1,26 +1,26 @@
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Layout from "./Pages/Layout"
-import Overview from "./Pages/Overview"
-import TechStack from "./Pages/TechStack"
-import Contact from "./Pages/Contact"
-import NoPage from "./Pages/NoPage"
-import Projects from "./Pages/Projects"
-import './App.css'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Layout from "./Pages/Layout";
+import Intro from "./Pages/Intro";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import NoPage from "./Pages/NoPage";
+import Projects from "./Pages/Projects";
+//import './App.css';
 
 function App() {
   
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Overview />} />
-          <Route path="techstack" element={<TechStack />} />
+          <Route path="intro" element={<Intro />} />
+          <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="projects " element={<Projects />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
     
   )
    
