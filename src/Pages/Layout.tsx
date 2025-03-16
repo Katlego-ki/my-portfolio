@@ -8,8 +8,8 @@ const Layout = () => {
     _clicked: "w-35 opacity-75 bg-blue-900 text-white font-mono px-3 py-2 rounded-md cursor-pointer text-center",
     _notClicked: "w-35 opacity-75 border-solid border-blue-900 border-2 text-white font-mono px-3 py-2 rounded-md cursor-pointer text-center",
   };
-
-  const [buttonClicked, setButtonClicked] = useState<boolean[]>(Array(4).fill(false));
+  //alternatively [true, false, false, false] but this is more dynamic
+  const [buttonClicked, setButtonClicked] = useState<boolean[]>([true,...Array(3).fill(false)]);
 
   const handleClick = (index: number) => {
     setButtonClicked(prevState => {
@@ -49,8 +49,7 @@ const Layout = () => {
           </div>
 
           <Outlet />
-          
-          
+
           <div className='footer w-full fixed bottom-10'>
             <svg className="w-2/3 h-1 mx-auto " viewBox="0 100 1">
               <line x1="0" x2="100%" stroke="#55B" strokeWidth="2" />
@@ -67,9 +66,9 @@ const Layout = () => {
                 </Link>
               ))}
               {/*resume button*/}
-              <Link to="/resume" className="w-35 text-center bg-black opacity-40 border-solid border-blue-900 border-1 text-white font-mono px-3 py-2 rounded-md cursor-pointer">
+              <a href="/myResume.pdf" className="w-35 text-center bg-black opacity-40 border-solid border-blue-900 border-1 text-white font-mono px-3 py-2 rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
                 Resume &#8599;
-              </Link>
+              </a>
             </div>
             <p className="mx-auto mt-10 text-gray-600 text-sm text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400"><b>visual studio code</b></a>.</p>
           </div>

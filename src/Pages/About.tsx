@@ -54,9 +54,9 @@ const About = () => {
       <div className="w-2/3 mx-auto mt-10">
         <h2 className="text-center mx-auto text-2xl font-mono mt-15">I'm Open to the following roles in Software Engineering :</h2>
         <p className="text-center text-lg bg-black mt-4">
-          &#9658; Graduate Programmes.
-          <br></br>&#9658; Junior Roles.
-          <br></br>&#9658; Internships.</p>
+          &#9658; Graduate Programmes.<br></br>
+          &#9658; Junior Roles.<br></br>
+          &#9658; Internships.</p>
       </div>
     </div>
   );
