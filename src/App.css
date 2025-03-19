@@ -1,4 +1,40 @@
 @import "tailwindcss";
 
+.portfolio {
+    background-image: url('./assets/images/my_portfolio.png');
+    background-size: cover;
+}
 
+.e-learn {
+    background-image: url('./assets/images/e-learning.png');
+    background-size: cover;
+}
+.mm-game {
+    background-image: url('./assets/images/memory_match.png');
+    background-size: cover;
+}
 
+.shadow{
+    box-shadow: 0px 0px 0px 3px rgba(100, 100, 100, 1);
+}
+
+.shadow1{
+    box-shadow: -5px 5px 1px 0px rgba(100, 100, 100, 1);
+}
+._button{
+    will-change: transform;
+    animation: alternate1 0.2s 1;
+}
+
+@keyframes alternate1 {
+    0% {
+        transform: tranlate(0,0);
+    }
+    50% {
+       transform: translate(-5px, 5px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+    
+}
