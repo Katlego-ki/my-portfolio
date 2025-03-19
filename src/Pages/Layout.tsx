@@ -43,9 +43,15 @@ const Layout = () => {
 
         <div className="h-full w-full mx-auto">
           <div className="icons text-blue-800 mt-5 flex justify-between w-1/8 mx-auto">
-            <i className="text-2xl mx-auto mdi mdi-email"></i>
-            <i className="text-2xl mx-auto mdi mdi-linkedin"></i>
-            <i className="text-2xl mx-auto mdi mdi-github"></i>
+            <a href="mailto:katlegobairvin@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
+              <i className="text-2xl mx-auto mdi mdi-email"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/katlegoAgua" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+              <i className="text-2xl mx-auto mdi mdi-linkedin"></i>
+            </a>
+            <a href="https://github.com/Katlego-ki" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+              <i className="text-2xl mx-auto mdi mdi-github"></i>
+            </a>
           </div>
 
           <Outlet />
