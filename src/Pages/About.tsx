@@ -12,8 +12,8 @@ const About = () => {
       <h2 className="text-center mx-auto text-2xl font-mono mt-15">My Tech Stack :</h2>
       <div className="shadow1 bg-gray-800 flex justify-between w-2/3 mt-5 p-2 rounded-md mx-auto">
         <div className="text-center mx-2">
-          <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="c++" className="w-15 h-15 mx-auto"/>
-          <p className="text-white">C++</p>
+          <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="c#" className="w-15 h-15 mx-auto"/>
+          <p className="text-white">C#</p>
         </div>
         <div className="text-center mx-2">
           <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="java" className="w-15 h-15 mx-auto"/>

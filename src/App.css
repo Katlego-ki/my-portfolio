@@ -26,6 +26,10 @@
     animation: alternate1 0.2s 1;
 }
 
+.mylist{
+    font-size: calc();
+}
+
 @keyframes alternate1 {
     0% {
         transform: tranlate(0,0);
