@@ -5,8 +5,8 @@ const Layout = () => {
   const pages = ['Intro', 'About', 'Projects', 'Contact'];
 
   const styles = {
-    _clicked: "w-35 _button opacity-75 bg-blue-900 text-white font-mono px-3 py-2 rounded-md cursor-pointer text-center",
-    _notClicked: "w-35 shadow1 opacity-75 border-solid border-blue-900 border-2 text-white font-mono px-3 py-2 rounded-md cursor-pointer text-center",
+    _clicked: "w-1/8 _button opacity-75 bg-blue-900 font-mono px-3 py-2 rounded-md cursor-pointer text-center",
+    _notClicked: "w-1/8 shadow1 opacity-75 border-solid border-blue-900 border-2 font-mono px-3 py-2 rounded-md cursor-pointer text-center",
   };
   //alternatively [true, false, false, false] but this is more dynamic
   const [buttonClicked, setButtonClicked] = useState<boolean[]>([true,...Array(3).fill(false)]);
