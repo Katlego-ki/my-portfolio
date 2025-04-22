@@ -1,7 +1,7 @@
 import mypic from '../assets/images/mypicture.jpg';
 const Intro = () => {
   return (
-    <div className=' h-[80vh]'>
+    <div className='h-[80vh]'>
 
       <div className="overflow-hidden h-1/3 aspect-square shadow-lg shadow m-auto rounded-full">
             <img src={mypic} alt="my-picture" className="w-auto h-full object-cover" />
