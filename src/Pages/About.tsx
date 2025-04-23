@@ -19,7 +19,7 @@ const About = () => {
           <img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" alt="java" className="w-full mx-auto"/>
           <p className="text-white">Java</p>
         </div>
-        <div className="text-center bg-green-900 w-1/15">
+        <div className="text-center w-1/15">
           <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="javascript" className="w-full mx-auto"/>
           <p className="text-white text-[1.0rem]">JS</p>
         </div>
