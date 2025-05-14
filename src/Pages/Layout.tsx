@@ -5,8 +5,8 @@ const Layout = () => {
   const pages = ['Intro', 'About', 'Projects', 'Contact'];
 
   const styles = {
-    _clicked: "min-w-1/8 _button text-[1rem] h-12 opacity-75 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
-    _notClicked: "min-w-1/8 h-12 shadow1 text-[1rem] opacity-75 border-solid border-blue-900 border-2 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
+    _clicked: "shadow-sm shadow-gray-300 min-w-1/8 _button text-[1rem] h-12 opacity-75 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
+    _notClicked: "shadow-md shadow-gray-500 min-w-1/8 h-12 shadow1 text-[1rem] opacity-75 border-solid border-blue-900 border-2 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
   };
   //alternatively [true, false, false, false] but this is more dynamic
   const [buttonClicked, setButtonClicked] = useState<boolean[]>([true,...Array(3).fill(false)]);
@@ -59,7 +59,7 @@ const Layout = () => {
               </Link>
             ))}
             {/*resume button*/}
-            <a href="/myResume.pdf" className="shadow1 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-40 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <a href="/myResume.pdf" className="shadow-md shadow-gray-500 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-40 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
               Resume&#8599;
             </a>
           </div>
