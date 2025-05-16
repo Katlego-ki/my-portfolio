@@ -29,7 +29,7 @@ const Layout = () => {
   return (
       <div className="grid h-screen w-screen mx-auto">
         {/* mt-5 ?? */}
-        <div className="justify-evenly icons h-[5vh] text-blue-800 flex w-1/3 mx-auto">
+        <div className="items-center justify-evenly icons h-[5vh] text-blue-800 flex w-1/3 mx-auto">
           <a href="mailto:katlegobairvin@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
             <i className="text-2xl mx-auto mdi mdi-email"></i>
           </a>

@@ -1,4 +1,4 @@
-import mypic from '../assets/images/my-picture.jpg';
+import mypic from '../assets/images/my_picture.jpg';
 import '../App.css';
 
 //const buttonState:boolean[] = [true, false, false, false] 
