@@ -28,7 +28,7 @@ const Projects = () => {
 
             <h2 className="mt-[10vh] h-fit text-center font-mono">Desktop Applications.</h2>
             <div className="mt-[3vh] flex justify-evenly h-fit">
-                <a className="w-1/4 h-fit"  href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer">
+                <a className="w-1/4 h-fit"  href="https://github.com/Katlego-ki/PigGame" target="_blank" rel="noopener noreferrer">
                     <div className="pig-game w-full h-[25vh] rounded-lg border-solid border-2 border-blue-900 shadow-md shadow-gray-500 bg-center bg-no-repeat bg-cover">
                         <p className="text-center bg-blue-900 text-lg font-mono">Pig Game</p>
                     </div>
