@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <div className="flex-column justify-center bg opacity-50 h-[80vh] w-3/4 mx-auto bg-black rounded-lg">
+        <div className="flex-column justify-center bg opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg">
             <h1 className="border-solid border-2 border-gray-400 text-center rounded-md mx-auto text-4xl font-mono">Contact:</h1>
             
             <div className="animate-onload overflow-auto pb-[10vh]">

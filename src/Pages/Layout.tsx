@@ -3,12 +3,11 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 const Layout = () => {
 
   const location = useLocation();
-
   const pages = ['Intro', 'About', 'Projects', 'Contact'];
 
   const styles = {
-    _clicked: "shadow-sm shadow-gray-300 min-w-1/8 _button text-[1rem] h-12 opacity-75 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
-    _notClicked: "shadow-md shadow-gray-500 min-w-1/8 h-12 shadow1 text-[1rem] opacity-75 border-solid border-blue-900 border-2 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
+    _clicked: "shadow-sm shadow-gray-300 min-w-1/8 _button text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
+    _notClicked: "shadow-md shadow-gray-500 min-w-1/8 h-12 shadow1 text-[1rem] opacity-100 bg-[#0b1337] border-solid border-blue-900 border-2 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
   };
 
   return (
@@ -45,11 +44,11 @@ const Layout = () => {
             ))}
 
             {/* resume button */}
-            <a href="/myResume.pdf" className="shadow-md shadow-gray-500 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-40 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
+            <a href="/myResume.pdf" className="shadow-md shadow-gray-500 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-90 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
               Resume&#8599;
             </a>
           </div>
-          <code className="flex items-center mx-auto text-gray-600 text-[1rem] text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
+          <code className="rounded-md px-2 flex bg-black items-center h-fit  mx-auto text-gray-600 text-[1rem] text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
             
         </div>
       </div>
