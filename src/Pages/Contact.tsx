@@ -3,7 +3,7 @@ const Contact = () => {
         <div className="flex-column justify-center bg opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg">
             <h1 className="border-solid border-2 border-gray-400 text-center rounded-md mx-auto text-4xl font-mono">Contact:</h1>
             
-            <div className="animate-onload overflow-auto pb-[10vh]">
+            <div className="animate-sl overflow-auto pb-[10vh]">
                 <h2 className="m-auto mt-[35vh] text-xl text-center">Feel free to contact me at <a className="underline font-bold" href="mailto:katlegobairvin@gmail.com">katlegobairvin@gmail.com</a></h2>
             </div>
         </div>

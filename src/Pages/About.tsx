@@ -13,7 +13,7 @@ const About = () => {
         </p>
 
         <h2 className="my-[3vh] text-center h-fit mx-auto text-2xl font-mono">My Tech Stack :</h2>
-        <div className="mb-[7vh] shadow-md shadow-gray-500 bg-gray-800 flex justify-between h-fit w-2/3 p-2 rounded-md mx-auto">
+        <div className="mb-[7vh] shadow-md shadow-gray-900 bg-gray-800 flex justify-between h-fit w-2/3 p-2 rounded-md mx-auto">
           <div className="text-center w-1/15">
             <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="c#" className="w-full mx-auto"/>
             <p className="text-white">C#</p>

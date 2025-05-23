@@ -68,3 +68,20 @@ p,ul{
     }
 }
 
+.animate-sl{
+    animation: swipeLeft 1s ease;
+}
+
+@keyframes swipeLeft {
+    from{transform: translate(100px,0) ;}
+    to{transform: translate(0,0);}
+}
+
+.animate-sr{
+    animation: swipeRight 0.7s ease;
+}
+
+@keyframes swipeRight {
+    from{transform: translate(-400px,0);}
+    to{transform: translate(0,0);}
+}

@@ -1,5 +1,6 @@
 import "../App.css";
 const Projects = () => {
+    
     return ( 
         <div className="grid opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg">
             <h1 className="border-solid w-full border-2 border-gray-400 text-center rounded-md mx-auto text-4xl font-mono">Projects:</h1>
@@ -10,17 +11,17 @@ const Projects = () => {
                 <h2 className="mb-[3vh] text-center font-mono">Web Applications.</h2> 
                 <div className="flex justify-evenly">
                     <a className="w-1/4"  href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"  >
-                        <div className="portfolio w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-md shadow-gray-500 bg-center bg-no-repeat bg-cover">
+                        <div className="portfolio w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <p className="text-center whitespace-nowrap overflow-x-auto bg-blue-900 text-lg font-mono">My Portfolio <i className="fa fa-info-circle"></i></p>
                         </div>
                     </a>
                     <a className="w-1/4 h-fit" href="https://frontend-katlegobairvin-gmailcom-katlego-s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" >
-                        <div className="e-learn w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-md shadow-gray-500 bg-center bg-no-repeat bg-cover">
+                        <div className="e-learn w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <p className="text-center whitespace-nowrap overflow-x-auto bg-blue-900 text-lg font-mono">e-learning site template</p>
                         </div>
                     </a>
                     <a className="w-1/4 h-fit" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <div className="mm-game w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-md shadow-gray-500 bg-center bg-no-repeat bg-cover">
+                        <div className="mm-game w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <p className="text-center whitespace-nowrap overflow-x-auto bg-blue-900 text-lg font-mono">Memory-match game</p>
                         </div>
                     </a>
@@ -29,7 +30,7 @@ const Projects = () => {
                 <h2 className="mt-[10vh] h-fit text-center font-mono">Desktop Applications.</h2>
                 <div className="mt-[3vh] flex justify-evenly h-fit">
                     <a className="w-1/4 h-fit"  href="https://github.com/Katlego-ki/PigGame" target="_blank" rel="noopener noreferrer">
-                        <div className="pig-game w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-md shadow-gray-500 bg-center bg-no-repeat bg-cover">
+                        <div className="pig-game w-full aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <p className="text-center whitespace-nowrap overflow-x-auto bg-blue-900 text-lg font-mono">Pig Game</p>
                         </div>
                     </a>
