@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-
+import launch from "../assets/icons/open_in_new.svg"
 const Layout = () => {
 
   const location = useLocation();
@@ -45,10 +45,11 @@ const Layout = () => {
 
             {/* resume button */}
             <a href="/myResume.pdf" className="shadow-md shadow-gray-700 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-80 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
-              Resume&#8599;
+              Resume
+              <img className="flex inline w-5 ml-1" src={launch} alt="launch-icon" />
             </a>
           </div>
-          <code className="rounded-md px-2 flex bg-black items-center h-fit  mx-auto text-gray-600 text-[1rem] text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
+          <code className="rounded-md px-2 flex bg-black items-center h-fit  mx-auto text-gray-600 whitespace-nowrap text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
             
         </div>
       </div>
