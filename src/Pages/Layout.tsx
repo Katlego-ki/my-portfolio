@@ -1,14 +1,30 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import launch from "../assets/icons/open_in_new.svg"
+import { useEffect, useState } from 'react';
+
 const Layout = () => {
 
   const location = useLocation();
+  const [myPaths] = useState<string[]>([]);
   const pages = ['Intro', 'About', 'Projects', 'Contact'];
+
+
+  // will be used to create "swipe left/right" animation
+  useEffect(()=>{
+
+    if(!(myPaths[myPaths.length-1] === location.pathname)) myPaths.push(location.pathname);
+    if(myPaths.length > 2) myPaths.shift();
+
+    console.log(myPaths);
+
+  }, [location.pathname]);
 
   const styles = {
     _clicked: "shadow-sm shadow-gray-400 min-w-1/8 _button text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
     _notClicked: "shadow-md shadow-gray-600 min-w-1/8 h-12 shadow1 text-[1rem] opacity-90 bg-[#0b1337] border-solid border-blue-900 border-1 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
   };
+
+  // let isMobile:boolean ;
 
   return (
       <div className="grid h-screen w-screen mx-auto">
