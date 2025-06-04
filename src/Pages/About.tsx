@@ -1,11 +1,15 @@
 import '../App.css';
+import {pages,pathsOrder} from './Layout';
 
 const About = () => {
+
+  const animate:string = pages.indexOf(pathsOrder[1])>pages.indexOf(pathsOrder[0])?"animate-sl":"animate-sr";
+
   return (
-    <div className="grid bg opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg">
+    <div className="grid opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg overflow-x-hidden">
       <h1 className="border-solid border-2 border-gray-400 w-full h-fit text-center rounded-md mx-auto text-4xl font-mono">About me:</h1>
       
-      <div className="animate-onload overflow-auto pb-[10vh]">
+      <div className={`${animate} overflow-auto pb-[10vh] wrapper`}>
         <p className="p-5 h-fit m-auto text-center w-2/3 text-lg bg-black">
           I'm a mathematician (BSC) with a passion for Software Engineering. 
           I believe I have an eye for UI/UX design but I'm more fascinated by how 
@@ -15,7 +19,7 @@ const About = () => {
         <h2 className="my-[3vh] text-center h-fit mx-auto text-2xl font-mono">My Tech Stack :</h2>
         <div className="mb-[7vh] shadow-md shadow-gray-900 bg-gray-800 flex justify-between h-fit w-2/3 p-2 rounded-md mx-auto">
           <div className="text-center w-1/15">
-            <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="c#" className="w-full mx-auto"/>
+            <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="c#" className="w-full aspect-ratio-square mx-auto"/>
             <p className="text-white">C#</p>
           </div>
           <div className="text-center w-1/15">
