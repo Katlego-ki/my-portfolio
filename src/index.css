@@ -3,8 +3,9 @@
 :root {
   font-family: monospace;
   color: rgb(255, 255, 255);
-  background-color: #0b1337;
   height: screen;
+  background-image: url("./assets/images/my_bg.jpg");
+  background-size: cover;
 }
 
 body {

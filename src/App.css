@@ -23,32 +23,52 @@
     animation: alternate1 0.2s 1;
 }
 
-@media(width<=400px){
-    p,h1,li{
-        font-size: xx-large;
-    }
-}
-
 h2{
     font-size: clamp(1.1rem, 1.5vw,1.3rem);
 }
 
 p,ul{
-    font-size: 1rem;
-    @media (width>=65em) {
-        font-size: 1.1rem;
-    }
     font-size: clamp(1rem, 1.2vw,1.1rem);
 }
 
+code{
+    font-size: clamp(0.7rem, 1.2vw,1rem);
+}
+
+.wrapper{
+    scrollbar-width: none;
+    -ms-scroll-rails: none;
+    -ms-overflow-style: none; /*Edge*/
+}
+
+.wrapper::-webkit-scrollbar-x{
+    display: none; /*Chrome, Safari, and Opera*/
+}
+
 @keyframes alternate1 {
-    0% {
-        transform: translate(0,0);
-    }
-    50% {
-       transform: translate(-5px, 5px);
-    }
-    100% {
-        transform: translate(0,0);
-    } 
+    0% {transform: translate(0,0);}
+    50% {transform: translate(-5px, 5px);}
+    100% {transform: translate(0,0);} 
+}
+
+.animate-sl{
+    animation: swipeLeft 1s ease;
+}
+
+@keyframes swipeLeft {
+    from{transform: translate(100px,0) ;}
+    to{transform: translate(0,0);}
+}
+
+.animate-sr{
+    animation: swipeRight 1s ease;
+}
+
+@keyframes swipeRight {
+    from{transform: translate(-100px,0);}
+    to{transform: translate(0,0);}
+}
+
+span{
+    vertical-align: top;
 }
