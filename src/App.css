@@ -52,21 +52,33 @@ code{
 }
 
 .animate-sl{
-    animation: swipeLeft 1s ease;
+    animation: swipeLeft 1.5s ease;
 }
 
 @keyframes swipeLeft {
-    from{transform: translate(100px,0) ;}
-    to{transform: translate(0,0);}
+    from{
+        transform: translate(100px,0) ; 
+        opacity: 0.3;
+    }
+    to{
+        transform: translate(0,0); 
+        opacity: 1;
+    }
 }
 
 .animate-sr{
-    animation: swipeRight 1s ease;
+    animation: swipeRight 1.5s ease;
 }
 
 @keyframes swipeRight {
-    from{transform: translate(-100px,0);}
-    to{transform: translate(0,0);}
+    from{
+        transform: translate(-100px,0);
+        opacity: 0.3;
+    }
+    to{
+        transform: translate(0,0);
+        opacity: 1;
+    }
 }
 
 span{

@@ -2,6 +2,7 @@ import { Outlet, Link, useLocation } from 'react-router-dom';
 import launch from "../assets/icons/open_in_new.svg"
 import showMenuIcon from "../assets/icons/show_menu.png"
 import { useEffect, useState } from 'react';
+import MobileMenu from "../components/MobileMenu"
 
 export const pathsOrder:string[] = ["/"];
 export const pages:string[] = ['Intro', 'About', 'Projects', 'Contact'];
@@ -10,6 +11,7 @@ const Layout = () => {
 
   const location = useLocation();
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+  const [showMenu, toggleMenu] = useState(false); //for mobile
 
   useEffect(()=>{
     const handleResize = ()=> {
@@ -49,9 +51,13 @@ const Layout = () => {
           </a>
         </div>
         {screenWidth>700?null: 
-        <div className='absolute right-[2vw] w-[10vw]'><img className= 'h-fit cursor-pointer' src={showMenuIcon} alt='show-menu-icon'></img></div>
+        <button className='absolute cursor-pointer right-[5vw] top-[5vh] w-[2rem]' onClick={()=>toggleMenu(!showMenu)} type='button'>
 
+          { showMenu?<img src={launch} alt='show-menu-icon'></img> : <img src={showMenuIcon} alt='show-menu-icon'></img>}
+          </button>
         }
+        {showMenu? <MobileMenu /> : null}
+
 
           <Outlet />
         {screenWidth<700?null:
@@ -59,6 +65,8 @@ const Layout = () => {
           <svg className="w-2/3 h-1 mx-auto" viewBox="0 100 1">
             <line x1="0" x2="100%" stroke="#55B" strokeWidth="2" />
           </svg>
+
+          {/* ====== Can be replaced with <NavBar /> ====== */}
           <div className="w-2/3 justify-evenly flex buttons m-auto">
 
             {/* Navigation buttons */}
