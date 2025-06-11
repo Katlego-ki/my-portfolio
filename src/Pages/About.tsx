@@ -7,7 +7,7 @@ const About = () => {
 
   return (
     <div className="grid opacity-90 h-[80vh] w-3/4 mx-auto bg-black rounded-lg overflow-x-hidden">
-      <h1 className="border-solid border-2 border-gray-400 w-full h-fit text-center rounded-md mx-auto text-4xl font-mono">About me:</h1>
+      <h1 className="border-solid border-2 border-gray-400 w-full h-fit text-center rounded-md mx-auto text-[23px] font-mono">About me:</h1>
       
       <div className={`${animate} overflow-auto pb-[10vh] wrapper`}>
         <p className="p-5 h-fit m-auto text-center w-2/3 text-lg bg-black">

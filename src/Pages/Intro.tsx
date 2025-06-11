@@ -3,7 +3,7 @@ import '../App.css';
 
 const Intro = () => {
   return (
-    <div className='grid opacity-90 h-[80vh]'>
+    <div className='grid w-fit m-auto opacity-90 h-[80vh]'>
 
       <div className="overflow-hidden h-[33vh] mt-[10vh] aspect-square shadow-md shadow-gray-500 m-auto rounded-full">
             <img src={mypic} alt="my-picture" className="w-auto h-full object-cover" />
