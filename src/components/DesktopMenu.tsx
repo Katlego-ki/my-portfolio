@@ -1,7 +1,6 @@
-import {Link} from 'react-router-dom'
-import {pages,pathsOrder, navButtonClick} from '../Pages/Layout'
+import {Link, useLocation} from 'react-router-dom'
+import {pages, handleNavigation} from '../Pages/Layout'
 import launch from '../assets/icons/open_in_new.svg'
-
 
 const styles = {
     _clicked: "shadow-sm shadow-gray-400 min-w-1/8 _button text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
@@ -9,16 +8,18 @@ const styles = {
 };
 
 const DesktopMenu = ()=> {
+  const location = useLocation();
+
     return(
-               <div className="w-2/3 justify-evenly flex buttons m-auto">
+          <div className="w-2/3 justify-evenly flex buttons m-auto">
 
           {/* Navigation buttons */}
           {pages.map((label, index) => (
             <Link
               key={index}
-              to={`/${label.toLowerCase()}`}
-              onClick={() => navButtonClick(label)}
-              className={`${pathsOrder[1] === label  ? styles._clicked:styles._notClicked}`}
+              to={`${label}`}
+              onClick={() => handleNavigation(label)}
+              className={`${location.pathname.slice(1) === label ? styles._clicked:styles._notClicked} ${location.pathname==="/" && label==="Intro"?styles._clicked:""}`}
             >
               {label}
             </Link>

@@ -1,8 +1,10 @@
-import {Link} from 'react-router-dom'
-import {pages,pathsOrder, navButtonClick} from '../Pages/Layout'
+import {Link, useLocation} from 'react-router-dom'
+import {pages, handleNavigation} from '../Pages/Layout'
 import launch from '../assets/icons/open_in_new.svg'
 
-const MobileMenu = ()=> {
+
+const MobileMenu = () => {
+    const location = useLocation();
     return(
         <div className="w-full bg-black opacity-75 justify-evenly flex buttons m-auto">
 
@@ -10,9 +12,9 @@ const MobileMenu = ()=> {
         {pages.map((label, index) => (
             <Link
             key={index}
-            to={`/${label.toLowerCase()}`}
-            onClick={() => navButtonClick(label)}
-            className={`font-bold ${pathsOrder[1] === label ? 'text-blue-500 underline':''}`}
+            to={label}
+            onClick={() => handleNavigation(label)}
+            className={`font-bold ${location.pathname.slice(1) === label? 'text-blue-500 underline':''} ${location.pathname==="/"&& label==="Intro"?'text-blue-500 underline':''}`}
             >
             {label}
             </Link>

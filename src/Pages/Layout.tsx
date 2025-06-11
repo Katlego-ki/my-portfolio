@@ -7,10 +7,10 @@ export const pathsOrder:string[] = ["/", "Intro"];
 export const pages:string[] = ['Intro', 'About', 'Projects', 'Contact'];
 
 //Used to create "swipe left/right" animation when loading components and styling nav buttons
-export function navButtonClick(currentPath:string){
-    if(pathsOrder[pathsOrder.length-1] != currentPath) pathsOrder.push(currentPath);
+export function handleNavigation(currentPath:string){
+    if(pathsOrder[pathsOrder.length-1] != currentPath && currentPath) pathsOrder.push(currentPath);
     if(pathsOrder.length>2) pathsOrder.shift();
-    console.log(pathsOrder);
+    (pathsOrder[pathsOrder.length-1] != currentPath) && currentPath?console.log(pathsOrder):null;
   }
 
 const Layout = () => {
@@ -22,6 +22,8 @@ const Layout = () => {
     const handleResize = ()=> {
       setScreenWidth(window.innerWidth);
     }
+
+    handleNavigation(location.pathname.slice(1));
 
     window.addEventListener('resize', handleResize);
 
