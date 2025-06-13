@@ -1,6 +1,6 @@
 import {Link, useLocation} from 'react-router-dom'
 import {pages, handleNavigation} from '../Pages/Layout'
-import launch from '../assets/icons/download.png'
+import launch from '../assets/icons/resume.png'
 
 const styles = {
     _clicked: "shadow-sm shadow-gray-400 min-w-1/8 _button text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
