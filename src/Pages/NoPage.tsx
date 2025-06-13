@@ -1,7 +1,7 @@
 
 const NoPage = () => {
     return (
-        <div className="m-auto">
+        <div className="bg-black opacity-75 m-auto">
             <h1 className="text-2xl">Page not found!</h1>
             <p>
                 <br></br>
