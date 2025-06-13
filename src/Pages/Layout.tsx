@@ -34,7 +34,7 @@ const Layout = () => {
 
   return (
     <div className="grid h-screen w-screen mx-auto">
-      <div className="items-center justify-evenly icons h-[5vh] text-blue-800 flex w-1/3 mx-auto">
+      <div className={`items-center justify-evenly icons h-[5vh] text-blue-800 flex ${screenWidth<700?'w-2/3':'w-1/3'} mx-auto`}>
         <a href="mailto:katlegobairvin@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
           <i className="text-2xl mx-auto mdi mdi-email"></i>
         </a>
@@ -53,7 +53,7 @@ const Layout = () => {
           <line x1="0" x2="100%" stroke="#55B" strokeWidth="2" />
         </svg>
 
-        { screenWidth<700? <MobileMenu /> : <DesktopMenu /> }
+        { screenWidth<768? <MobileMenu /> : <DesktopMenu /> }
 
         <code className="rounded-md px-2 flex bg-black items-center h-fit  mx-auto text-gray-600 whitespace-nowrap text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
           
