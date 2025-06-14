@@ -7,7 +7,7 @@ const Projects = () => {
     const animate:string = pages.indexOf(pathsOrder[1])>pages.indexOf(pathsOrder[0])?"animate-sl":"animate-sr";
 
     return ( 
-        <div className="grid overflow-hidden opacity-90 h-[80vh] w-9/10 md:w-3/4 mx-auto bg-black rounded-lg">
+        <div className="grid overflow-hidden opacity-90 h-[80dvh] w-9/10 md:w-3/4 mx-auto bg-black rounded-lg">
             <h1 className="border-solid w-full h-fit border-2 border-gray-400 text-center rounded-md mx-auto text-[23px] font-mono">My Projects:</h1>
             <div className={`${animate} overflow-auto pb-[10vh] wrapper`}>
                 <p className="my-[5vh] w-9/10 md:w-3/5 text-center text-lg font-mono mx-auto">Below are some of the projects I have worked on. You can visit 
