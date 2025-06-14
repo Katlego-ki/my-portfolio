@@ -26,7 +26,7 @@ const DesktopMenu = ()=> {
           ))}
 
           {/* resume button */}
-          <a href="/myResume.pdf" className="shadow-md shadow-gray-700 min-w-1/8 flex justify-center items-center text-center px-3 bg-black opacity-80 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
+          <a href="/myResume.pdf" className="shadow-md shadow-gray-700 min-w-1/8 flex justify-center items-center px-3 bg-black opacity-80 border-solid border-blue-900 border-1 text-white font-mono rounded-md cursor-pointer" target="_blank" rel="noopener noreferrer">
             Resume
             <img className="flex inline w-5 ml-1" src={launch} alt="launch-icon" />
           </a>
