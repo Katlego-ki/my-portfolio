@@ -1,10 +1,10 @@
 import {Link, useLocation} from 'react-router-dom'
 import {pages, handleNavigation} from '../Pages/Layout'
 import resume from '../assets/icons/download.png'
-import projects from '../assets/icons/projects.png'
-import about from '../assets/icons/about.png'
-import intro from '../assets/icons/intro.png'
-import contact from '../assets/icons/contact.png'
+import projects from '../assets/icons/Projects.png'
+import about from '../assets/icons/About.png'
+import intro from '../assets/icons/Intro.png'
+import contact from '../assets/icons/Contact.png'
 
 
 const myIcons = [intro, about, projects, contact];
