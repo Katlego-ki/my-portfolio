@@ -33,7 +33,7 @@ const Layout = () => {
   }, [location]); 
 
   return (
-    <div className="grid h-screen w-screen mx-auto">
+    <div className="grid h-full w-full mx-auto">
       <div className={`items-center justify-evenly icons h-[5vh] text-blue-800 flex ${screenWidth<700?'w-2/3':'w-1/3'} mx-auto`}>
         <a href="mailto:katlegobairvin@gmail.com" target="_blank" rel="noopener noreferrer" title="Email">
           <i className="text-2xl mx-auto mdi mdi-email"></i>
