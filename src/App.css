@@ -9,6 +9,7 @@
     background-image: url('./assets/images/e_learning.jpg');
     background-size: cover;
 }
+
 .mm-game {
     background-image: url('./assets/images/memory_match.jpg');
     background-size: cover;
@@ -18,6 +19,7 @@
     background-image: url('./assets/images/pig_game.jpg');
     background-size: cover;
 }
+
 ._button{
     will-change: transform;
     animation: alternate1 0.2s 1;

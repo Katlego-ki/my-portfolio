@@ -55,7 +55,7 @@ const Layout = () => {
 
         { screenWidth<768? <MobileMenu /> : <DesktopMenu /> }
 
-        <code className="rounded-md px-2 flex bg-black items-center h-fit  mx-auto text-gray-600 whitespace-nowrap text-center">&copy;2025, Designed and built by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
+        <code className="rounded-md px-2 flex bg-black items-center h-fit mx-auto text-gray-600 whitespace-nowrap text-center">&copy;2025, Developed by katlego mailula using <a className="text-gray-400 font-bold ml-2" href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">visual studio code</a>.</code>
           
       </div>
       
