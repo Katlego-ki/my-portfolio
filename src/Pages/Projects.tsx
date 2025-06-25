@@ -17,7 +17,7 @@ const Projects = () => {
                 <div className="grid gap-[5vh]">
                     {/* ================= my porfolio ================ */}
                     <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4">
-                        <div className="portfolio m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                        <div className="portfolio m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">My Portfolio </p>  
                                 <a className="mt-0.5" title="view on github" href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
@@ -32,7 +32,7 @@ const Projects = () => {
                     
                     {/* =========== e-learning site template =============== */}
                     <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
-                        <div className="e-learn m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                        <div className="e-learn m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">website template </p>  
                                 <a className="mt-0.5" title="Launch App" href="https://frontend-katlegobairvin-gmailcom-katlego-s-projects.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
@@ -47,7 +47,7 @@ const Projects = () => {
 
                     {/* =========== Memory-match game =========== */}
                     <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
-                        <div className="mm-game m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                        <div className="mm-game m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Memory-match</p> 
                                 <a className="mt-0.5" title="Launch App" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
@@ -64,7 +64,7 @@ const Projects = () => {
                 <h2 className="mt-[10vh] mb-[3vh] h-fit text-center font-mono">Desktop Applications.</h2>
                 <div className="grid gap-[5vh]">
                     <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
-                        <div className="pig-game m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                        <div className="pig-game m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Pig Game </p> 
                                 <a className="mt-0.5" title="Launch App" href="https://github.com/Katlego-ki/PigGame"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
