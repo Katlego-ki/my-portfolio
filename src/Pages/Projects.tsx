@@ -14,44 +14,68 @@ const Projects = () => {
                 <a className="ml-2 font-bold underline" href="https://github.com/Katlego-ki" target="_blank" rel="noopener" >my github profile</a> to access the source code of each project.</p>
     
                 <h2 className="mb-[3vh] text-center font-mono">Web Applications.</h2> 
-                <div className="flex justify-evenly">
+                <div className="grid gap-[5vh]">
+                    {/* ================= my porfolio ================ */}
+                    <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4">
+                        <div className="portfolio m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                            <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
+                                <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">My Portfolio </p>  
+                                <a className="mt-0.5" title="view on github" href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                            </div>
+                        </div>
 
-                    <div className="portfolio w-1/4 aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
-                       <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
-                            <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">My Portfolio </p> 
-                            <span className="text-cyan-500 px-4 text-[1.2rem] font-bold cursor-pointer" title="React | Typescript | Tailwind CSS">&#9432;</span> 
-                            <a className="mt-0.5" title="view on github" href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                        <div className="w-fit md:w-full m-auto">
+                            <p>&#9643; My Portfolio</p> 
+                            <p> &#9643; Build Tools : React | Typescript | TailwindCSS </p>
                         </div>
                     </div>
                     
-                    <div className="e-learn w-1/4 aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
-                        <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
-                            <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">e-learning site template </p> 
-                            <span className="text-cyan-500 px-4 text-[1.2rem] font-bold cursor-pointer" title="React | Javascript | MUI">&#9432;</span> 
-                            <a className="mt-0.5" title="Launch App" href="https://frontend-katlegobairvin-gmailcom-katlego-s-projects.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                    {/* =========== e-learning site template =============== */}
+                    <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
+                        <div className="e-learn m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                            <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
+                                <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">website template </p>  
+                                <a className="mt-0.5" title="Launch App" href="https://frontend-katlegobairvin-gmailcom-katlego-s-projects.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                            </div>
+                        </div>
+                        
+                        <div className="w-fit md:w-full m-auto">
+                            <p>&#9643; Description : A frontend template for a typical e-learning website. </p> 
+                            <p> &#9643; Build Tools : React | Javascript | MUI </p>
                         </div>
                     </div>
 
-                    <div className="mm-game w-1/4 aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
-                       <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
-                            <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Memory-match game </p> 
-                            <span className="text-cyan-500 px-4 text-[1.2rem] font-bold cursor-pointer" title="Javascript | HTML/CSS">&#9432;</span> 
-                            <a className="mt-0.5" title="Launch App" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
-                        </div>                
+                    {/* =========== Memory-match game =========== */}
+                    <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
+                        <div className="mm-game m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                            <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
+                                <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Memory-match</p> 
+                                <a className="mt-0.5" title="Launch App" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                            </div>
+                        </div>
+                        
+                        <div className="w-fit md:w-full m-auto">
+                            <p>&#9643; Description : A fun game where you flip cards to find matching pairs before time elapses. </p> 
+                            <p> &#9643; Build Tools : Javascript | HTML/CSS </p>
+                        </div>
                     </div>
                 </div>
 
-                <h2 className="mt-[10vh] h-fit text-center font-mono">Desktop Applications.</h2>
-                <div className="mt-[3vh] flex justify-evenly h-fit">
+                <h2 className="mt-[10vh] mb-[3vh] h-fit text-center font-mono">Desktop Applications.</h2>
+                <div className="grid gap-[5vh]">
+                    <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
+                        <div className="pig-game m-auto h-[140px] md:h-[12vh] lg:h-[16vh] aspect-[2.2] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                            <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
+                                <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Pig Game </p> 
+                                <a className="mt-0.5" title="Launch App" href="https://github.com/Katlego-ki/PigGame"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                            </div>                  
+                        </div>
 
-                    <div className="pig-game w-1/4 aspect-video rounded-lg border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
-                        <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
-                            <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Pig Game </p> 
-                            <span className="text-cyan-500 px-4 text-[1.2rem] font-bold cursor-pointer" title="C# | WPF(.Net)">&#9432;</span> 
-                            <a className="mt-0.5" title="Launch App" href="https://github.com/Katlego-ki/PigGame"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
-                        </div>                   
+                        <div className="w-fit md:w-full m-auto">
+                            <p>&#9643; Description : The classic 2 player dice game, first player to reach 100 wins. </p> 
+                            <p className=""> &#9643; Build Tools : C# | WPF (.Net) </p>
+                        </div> 
                     </div>
-
                 </div>
             </div>
         </div>
