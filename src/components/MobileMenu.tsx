@@ -20,7 +20,7 @@ const MobileMenu = () => {
                 key={index}
                 to={label}
                 onClick={() => handleNavigation(label)}
-                className={`font-bold ${(location.pathname.slice(1) === label) ||(location.pathname==="/"&& label==="Intro")?'text-blue-500 underline':'grayscale'}`}
+                className={`font-bold ${(location.pathname.slice(1) === label) ||(location.pathname==="/"&& label==="Intro")?'text-blue-500':'grayscale'}`}
                 >
                 <img className={`w-[2rem] mx-auto`} src={myIcons[index]} alt="page-icon" />
                 <p>{label}</p>
