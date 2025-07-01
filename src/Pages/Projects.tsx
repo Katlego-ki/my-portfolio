@@ -63,6 +63,8 @@ const Projects = () => {
 
                 <h2 className="mt-[10vh] mb-[3vh] h-fit text-center font-mono">Desktop Applications.</h2>
                 <div className="grid gap-[5vh]">
+
+                    {/* =========== Pig game =========== */}                   
                     <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
                         <div className="pig-game m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
