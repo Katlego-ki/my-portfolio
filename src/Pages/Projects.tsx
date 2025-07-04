@@ -1,6 +1,7 @@
 import "../App.css";
-import launch from "../assets/icons/open_in_new.svg";
 import {pages,pathsOrder} from "./Layout";
+import sourceCode from "../assets/icons/project-icons/icon1.png"
+import play from "../assets/icons/project-icons/icon5.png"
 
 const Projects = () => {
 
@@ -20,13 +21,13 @@ const Projects = () => {
                         <div className="portfolio m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">My Portfolio </p>  
-                                <a className="mt-0.5" title="view on github" href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                                <a className="mt-0.5" title="view source code" href="https://github.com/Katlego-ki/my-portfolio" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-3" src={sourceCode} alt="fork-code-icon" /></a>
                             </div>
                         </div>
 
                         <div className="w-fit md:w-full m-auto">
                             <p>&#9643; My Portfolio</p> 
-                            <p> &#9643; Build Tools : React | Typescript | TailwindCSS </p>
+                            <p>&#9643; Build Tools : React | Typescript | TailwindCSS </p>
                         </div>
                     </div>
                     
@@ -35,13 +36,13 @@ const Projects = () => {
                         <div className="e-learn m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">website template </p>  
-                                <a className="mt-0.5" title="Launch App" href="https://frontend-katlegobairvin-gmailcom-katlego-s-projects.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                                <a className="mt-0.5" title="view source code" href="https://github.com/Katlego-ki/e-Learning-Frontend-Template" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-3" src={sourceCode} alt="fork-code-icon" /></a>
                             </div>
                         </div>
                         
                         <div className="w-fit md:w-full m-auto">
                             <p>&#9643; Description : A frontend template for a typical e-learning website. </p> 
-                            <p> &#9643; Build Tools : React | Javascript | MUI </p>
+                            <p>&#9643; Build Tools : React | Javascript | MUI </p>
                         </div>
                     </div>
 
@@ -50,13 +51,15 @@ const Projects = () => {
                         <div className="mm-game m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm  border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Memory-match</p> 
-                                <a className="mt-0.5" title="Launch App" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                                <a className="mt-0.5" title="view source code" href="https://github.com/Katlego-ki/Card-Memory-Match" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-2" src={sourceCode} alt="fork-code-icon" /></a>
+                                <a className="mt-0.5" title="Play Game" href="https://card-memory-match.vercel.app/" target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-1 " src={play} alt="play-icon" /></a>
+
                             </div>
                         </div>
                         
                         <div className="w-fit md:w-full m-auto">
                             <p>&#9643; Description : A fun game where you flip cards to find matching pairs before time elapses. </p> 
-                            <p> &#9643; Build Tools : Javascript | HTML/CSS </p>
+                            <p>&#9643; Build Tools : Javascript | HTML/CSS </p>
                         </div>
                     </div>
                 </div>
@@ -69,13 +72,13 @@ const Projects = () => {
                         <div className="pig-game m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
                             <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
                                 <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Pig Game </p> 
-                                <a className="mt-0.5" title="Launch App" href="https://github.com/Katlego-ki/PigGame"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1" src={launch} alt="launch-icon" /></a>
+                                <a className="mt-0.5" title="view source code" href="https://github.com/Katlego-ki/PigGame"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-2" src={sourceCode} alt="fork-code-icon" /></a>
                             </div>                  
                         </div>
 
                         <div className="w-fit md:w-full m-auto">
                             <p>&#9643; Description : The classic 2 player dice game, first player to reach 100 wins. </p> 
-                            <p className=""> &#9643; Build Tools : C# | WPF (.Net) </p>
+                            <p>&#9643; Build Tools : C# | WPF (.Net) </p>
                         </div> 
                     </div>
                 </div>
