@@ -81,6 +81,22 @@ const Projects = () => {
                             <p>&#9643; Build Tools : C# | WPF (.Net) </p>
                         </div> 
                     </div>
+
+                    {/* =========== Desktop Chess ============ */}
+                    <div className="grid gap-[2vh] md:grid-cols-2 m-auto w-3/4" >
+                        <div className="chess m-auto md:h-[12vh] lg:h-[16vh] aspect-[2.2] h-[30vw] rounded-sm border-solid border-2 border-blue-900 shadow-lg shadow-gray-800 bg-center bg-no-repeat bg-cover">
+                            <div className="flex justify-center whitespace-nowrap overflow-x-auto bg-blue-900">
+                                <p className="flex inline whitespace-nowrap text-lg font-mono cursor-default">Desktop Chess </p> 
+                                <a className="mt-0.5" title="view source code" href="https://github.com/Katlego-ki/Desktop-Chess"  target="_blank" rel="noopener noreferrer"><img className="flex inline max-w-5 mb-1 ml-2" src={sourceCode} alt="fork-code-icon" /></a>
+                            </div>                  
+                        </div>
+
+                        <div className="w-fit md:w-full m-auto">
+                            <p>&#9643; Description : A scalable desktop chess app.</p> 
+                            <p>&#9643; Build Tools : C# | WPF (.Net) </p>
+                            <p className="text-green-500 font-bold"> In progress!</p>
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>

@@ -20,6 +20,11 @@
     background-size: cover;
 }
 
+.chess{
+    background-image: url('./assets/images/chess_app.jpg');
+    background-size: cover;
+}
+
 ._button{
     will-change: transform;
     animation: alternate1 0.2s 1;
