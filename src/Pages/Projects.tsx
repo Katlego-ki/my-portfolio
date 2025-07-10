@@ -1,4 +1,3 @@
-import "../App.css";
 import {pages,pathsOrder} from "./Layout";
 import sourceCode from "../assets/icons/project-icons/icon1.png"
 import play from "../assets/icons/project-icons/icon5.png"

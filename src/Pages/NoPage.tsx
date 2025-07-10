@@ -1,4 +1,3 @@
-
 const NoPage = () => {
     return (
         <div className="bg-black opacity-75 m-auto">

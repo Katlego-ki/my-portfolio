@@ -5,7 +5,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import NoPage from "./Pages/NoPage";
 import Projects from "./Pages/Projects";
-//import './App.css';
+import './App.css';
 
 function App() {
   
@@ -27,5 +27,3 @@ function App() {
 }
 
 export default App
-//why link rel attribute requires noopener
-//https://web.dev/external-anchors-use-rel-noopener/

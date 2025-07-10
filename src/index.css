@@ -4,7 +4,15 @@
   font-family: monospace;
   color: rgb(255, 255, 255);
   height: 100dvh;
+}
 
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+html{
+  background-color: #111;
   background-image: url("./assets/images/mobile-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,10 +22,4 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
 }
