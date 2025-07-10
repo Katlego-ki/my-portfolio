@@ -3,7 +3,7 @@ import {pages, handleNavigation} from '../Pages/Layout'
 import launch from '../assets/icons/navigation-icons/open_in_new.svg'
 
 const buttonState = {
-    _clicked: "shadow-sm shadow-gray-400 min-w-1/8 _button text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
+    _clicked: "_button shadow-sm shadow-gray-400 min-w-1/8 text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
     _notClicked: "shadow-md shadow-gray-600 min-w-1/8 h-12 shadow1 text-[1rem] opacity-90 bg-[#0b1337] border-solid border-blue-900 border-1 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
 };
 
@@ -11,7 +11,7 @@ const DesktopMenu = ()=> {
   const location = useLocation();
 
   return(
-    <div className="w-2/3 justify-evenly flex buttons m-auto">
+    <div className="w-2/3 justify-evenly flex m-auto">
 
       {/* Navigation buttons */}
       {pages.map((label, index) => (

@@ -27,7 +27,7 @@
 
 ._button{
     will-change: transform;
-    animation: alternate1 0.2s 1;
+    animation: clickAnimate 0.2s 1;
 }
 
 h2{
@@ -52,10 +52,9 @@ code{
     display: none; /*Chrome, Safari, and Opera*/
 }
 
-@keyframes alternate1 {
-    0% {transform: translate(0,0);}
-    50% {transform: translate(-5px, 5px);}
-    100% {transform: translate(0,0);} 
+@keyframes clickAnimate {
+    from {transform: scale(0.8)}
+    to {transform: scale(1);} 
 }
 
 .animate-sl{
@@ -65,10 +64,12 @@ code{
 @keyframes swipeLeft {
     from{
         transform: translate(100px,0) ; 
-        opacity: 0.3;
+        filter: grayscale(100);
+        opacity: 0.4;
     }
     to{
         transform: translate(0,0); 
+        filter: grayscale(0);
         opacity: 1;
     }
 }
@@ -80,10 +81,12 @@ code{
 @keyframes swipeRight {
     from{
         transform: translate(-100px,0);
-        opacity: 0.3;
+        filter: grayscale(100);
+        opacity: 0.4;   
     }
     to{
         transform: translate(0,0);
+        filter: grayscale(0);
         opacity: 1;
     }
 }
