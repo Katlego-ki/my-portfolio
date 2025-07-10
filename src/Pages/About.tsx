@@ -1,4 +1,3 @@
-import '../App.css';
 import {pages,pathsOrder} from './Layout';
 
 const About = () => {

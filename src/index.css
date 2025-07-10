@@ -21,3 +21,7 @@ body {
   margin: 0;
   min-width: 320px;
 }
+
+html{
+  background-color: #333;
+}

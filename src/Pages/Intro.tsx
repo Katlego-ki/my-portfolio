@@ -1,5 +1,4 @@
 import mypic from '../assets/images/my_picture.jpg';
-import '../App.css';
 
 const Intro = () => {
   return (
