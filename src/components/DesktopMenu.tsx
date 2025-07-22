@@ -3,7 +3,7 @@ import {pages, handleNavigation} from '../Pages/Layout'
 import launch from '../assets/icons/navigation-icons/open_in_new.svg'
 
 const buttonState = {
-    _clicked: "_button shadow-sm shadow-gray-400 min-w-1/8 text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
+    _clicked: "_button font-bold shadow-sm shadow-gray-400 min-w-1/8 text-[1rem] h-12 bg-blue-900 font-mono px-3 flex justify-center items-center text-center rounded-md cursor-pointer text-center",
     _notClicked: "shadow-md shadow-gray-600 min-w-1/8 h-12 shadow1 text-[1rem] opacity-90 bg-[#0b1337] border-solid border-blue-900 border-1 font-mono flex justify-center items-center text-center px-3 rounded-md cursor-pointer text-center",
 };
 
@@ -19,7 +19,7 @@ const DesktopMenu = ()=> {
           key={index}
           to={`${label}`}
           onClick={() => handleNavigation(label)}
-          className={`${(location.pathname.slice(1) === label) || (location.pathname==="/" && label==="Intro") ? buttonState._clicked:buttonState._notClicked}`}
+          className={`${(location.pathname === '/'+label) || (location.pathname==="/" && label==="Intro") ? buttonState._clicked:buttonState._notClicked}`}
         >
           {label}
         </Link>

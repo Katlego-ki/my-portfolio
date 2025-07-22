@@ -1,36 +1,35 @@
-import { Outlet, useLocation} from 'react-router-dom';
+import { Outlet} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import MobileMenu from "../components/MobileMenu"
 import DesktopMenu from '../components/DesktopMenu';
 
 export const pathsOrder:string[] = ["/", "Intro"];
-export const pages:string[] = ['Intro', 'About', 'Projects', 'Contact'];
+export const pages = ['Intro', 'About', 'Projects', 'Contact'];
 
-//Used to create "swipe left/right" animation when loading components and styling nav buttons
+//Used to create "swipe left/right" animation when loading components
 export function handleNavigation(currentPath:string){
-    if(pathsOrder[pathsOrder.length-1] != currentPath && currentPath) pathsOrder.push(currentPath);
-    if(pathsOrder.length>2) pathsOrder.shift();
-    (pathsOrder[pathsOrder.length-1] != currentPath) && currentPath?console.log(pathsOrder):null;
+  if(pathsOrder[pathsOrder.length-1] != currentPath) {
+    pathsOrder.push(currentPath); 
+    pathsOrder.shift();
   }
+}
 
 const Layout = () => {
 
-  const location = useLocation(); //Used to trigger a rerender on nav button clicks
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
 
+  //To add an event listener for changes in screen width.
   useEffect(()=>{
     const handleResize = ()=> {
       setScreenWidth(window.innerWidth);
     }
-
-    handleNavigation(location.pathname.slice(1));
 
     window.addEventListener('resize', handleResize);
 
     return ()=> {
       window.removeEventListener('resize', handleResize);
     }
-  }, [location]); 
+  }, []); 
 
   return (
     <div className="grid h-full w-full mx-auto">
@@ -46,7 +45,8 @@ const Layout = () => {
         </a>
       </div>
 
-        <Outlet />
+        {/* Pages rendered here */}
+        <Outlet /> 
         
       <div className='footer grid justify-content-between h-[15vh] w-screen m-auto'>
         <svg className="w-2/3 h-1 mx-auto" viewBox="0 100 1">

@@ -19,7 +19,7 @@ const MobileMenu = () => {
                     key={index}
                     to={label}
                     onClick={() => handleNavigation(label)}
-                    className={`font-bold ${(location.pathname.slice(1) === label) ||(location.pathname==="/"&& label==="Intro")?'text-blue-500':'grayscale'}`}
+                    className={`${(location.pathname == '/'+label) ||(location.pathname =="/"&& label==="Intro")?'text-blue-500 font-bold':'grayscale'}`}
                 >
                     <img className={`w-[2rem] mx-auto`} src={myIcons[index]} alt="page-icon" />
                     <p>{label}</p>
@@ -29,7 +29,7 @@ const MobileMenu = () => {
             {/*======== resume button ========*/}
             <a href="/myResume.pdf" target="_blank" rel="noopener noreferrer">
                 <img className="w-[2rem] mx-auto grayscale" src={resume} alt="download-icon" />
-                <p className='items-center font-bold text-[1rem] font-mono'>Resume</p>
+                <p className='items-center text-[1rem] font-mono'>Resume</p>
             </a>
         </div>
     )
