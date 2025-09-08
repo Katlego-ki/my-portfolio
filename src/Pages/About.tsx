@@ -17,6 +17,11 @@ const About = () => {
 
         <h2 className="my-[3vh] text-center h-fit mx-auto text-2xl font-mono">My Tech Stack :</h2>
         <div className="mb-[7vh] shadow-md shadow-gray-900 bg-gray-800 flex flex-wrap justify-center lg:justify-evenly  h-fit w-9/10 md:w-2/3 rounded-md mx-auto">
+          {/* c++*/}
+          <div className="text-center p-2 w-fit">
+            <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="cpp" className="w-[40px] mx-auto"/>
+            <p className="text-white">C++</p>
+          </div>
           <div className="text-center p-2 w-fit">
             <img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" alt="c#" className="w-[40px]"/>
             <p className="text-white">C#</p>
@@ -28,10 +33,6 @@ const About = () => {
           <div className="text-center p-2 w-fit">
             <img src="https://img.icons8.com/color/48/000000/javascript.png" alt="js" className="w-[40px] mx-auto"/>
             <p className="text-white text-[1.0rem]">JS</p>
-          </div>
-          <div className="text-center p-2 w-fit">
-            <img src="https://img.icons8.com/color/48/000000/typescript.png" alt="ts" className="w-[40px] mx-auto"/>
-            <p className="text-white">TS</p>
           </div>
           <div className="text-center p-2 w-fit">
             <img src="https://img.icons8.com/color/48/000000/react-native.png" alt="rct" className="w-[40px] mx-auto"/>
